@@ -11,7 +11,13 @@ import linkedin from "./Components/Assets/linkedin.png";
 import react from "./Components/Assets/react.png";
 import vite from "./Components/Assets/vite.png";
 import tailwind from "./Components/Assets/tailwind.png";
-import jsx from "./Components/Assets/jsx.png";
+import javascript from "./Components/Assets/javascript.png";
+import typescript from "./Components/Assets/typescript.svg";
+import playwright from "./Components/Assets/playwright.svg";
+import postman from "./Components/Assets/postman.svg";
+import jira from "./Components/Assets/jira.png";
+import testrail from "./Components/Assets/testrail.svg";
+import git from "./Components/Assets/git.svg";
 
 import frontend from "./Components/Assets/Frontend.gif";
 
@@ -33,6 +39,7 @@ import phone from "./Components/Assets/phone.png";
 import redirect from "./Components/Assets/redirect.png";
 
 import facebook from "./Components/Assets/facebook.png";
+import resume from "./Components/Assets/Resume.jpg";
 
 import "./App.css";
 
@@ -428,14 +435,17 @@ function App() {
           <div>
             <div className="flex flex-col-reverse items-center justify-center gap-[6vh] md:flex-row md:gap-[12vh]">
               <div className="flex flex-col items-center gap-1 md:items-start">
-                <div className="flex flex-col">
-                  <div className="text-[5vh] font-bold md:text-[7vh]">
-                    Front-End React
-                  </div>
+                <div className="flex flex-row items-center gap-[1.5vh] md:gap-[5vh]">
+                  <div className="flex flex-col">
+                    <div className="text-[5vh] font-bold md:text-[7vh]">
+                      Software
+                    </div>
 
-                  <div className="flex items-center gap-[2vh] text-[5vh] font-bold md:text-[7vh]">
-                    Developer
-                    <img
+                    <div className="flex items-center gap-[2vh] text-[5vh] font-bold md:text-[7vh]">
+                      Engineer
+                    </div>
+                  </div>
+                  <img
                       src={handwave}
                       alt="handwave"
                       className="
@@ -444,26 +454,25 @@ function App() {
                         transition-transform duration-300 hover:animate-wave
                       "
                     />
-                  </div>
                 </div>
 
                 <div className="flex flex-col items-center md:items-start">
                   <div className="mt-[1vh] pl-[0.6vh] text-[1.5vh] md:mt-[3.5vh] md:text-[2vh]">
-                    Hi, I'm Michael David N Agudo. A learning Front-end React
+                    Hi, I'm Michael David N Agudo. A learning Software Engineer
                   </div>
 
                   <div className="mt-[1vh] pl-[0.6vh] text-[1.52vh] md:text-[2vh]">
-                    Developer from the University of the Philippines Manila. 📍
+                    and Fresh Graduate from the University of the Philippines Manila. 📍
                   </div>
                 </div>
 
                 <div className="flex flex-col items-center justify-center md:block">
                   <div className="my-[2.5vh] flex gap-[3vh] md:my-[3vh] md:ml-[1vh]">
-                    <SocialButton
+                    {/* <SocialButton
                       href="https://www.facebook.com/3L.DNA/"
                       icon={facebook}
                       alt="facebook"
-                    />
+                    /> */}
 
                     <SocialButton
                       href="https://www.linkedin.com/in/avi-na"
@@ -478,18 +487,28 @@ function App() {
                     />
                   </div>
 
-                  <div
-                    className="
-                      mt-[1vh] flex flex-row items-center gap-[2.1vh]
-                      pl-[0.5vh] text-[2vh] md:gap-[4.75vh]
-                    "
-                  >
-                    Tech Stack
-                    <span className="px-[3.5vh] text-[2vh] font-light">|</span>
-                    <TechIcon src={react} alt="react" />
-                    <TechIcon src={vite} alt="vite" />
-                    <TechIcon src={tailwind} alt="tailwind" />
-                    <TechIcon src={jsx} alt="jsx" />
+                  <div className="mt-[1vh] flex flex-col gap-[3vh] pl-[0.5vh] text-[2vh]">
+
+                  <div className="flex flex-row items-center gap-[2.1vh] md:gap-[4.75vh]">
+                    Frontend
+                    <span className="pl-[4.8vh] pr-[1vh] font-light">|</span>
+                    <TechIcon src={react} alt="React" />
+                    <TechIcon src={vite} alt="Vite" />
+                    <TechIcon src={tailwind} alt="Tailwind CSS" />
+                    <TechIcon src={javascript} alt="JavaScript" />
+                    <TechIcon src={typescript} alt="TypeScript" />
+                  </div>
+
+                  <div className="flex flex-row items-center gap-[2.1vh] md:gap-[4.75vh]">
+                    QA & Testing
+                    <span className="px-[1vh] font-light">|</span>
+                    <TechIcon src={playwright} alt="Playwright" />
+                    <TechIcon src={postman} alt="Postman" />
+                    <TechIcon src={jira} alt="Jira" />
+                    <TechIcon src={testrail} alt="TestRail" />
+                    <TechIcon src={git} alt="Git" />
+                  </div>
+
                   </div>
                 </div>
               </div>
@@ -549,18 +568,18 @@ function App() {
               </div>
 
               <div className="mt-[1.5vh] text-[2.9vh] font-bold text-[#2F3037] md:mt-[1vh] md:text-[3.5vh]">
-                <div>A passionate Front-end Developer from</div>
-                <div>the University of the Philippines Manila</div>
+                <div>A Software Engineer focused on</div>
+                <div>Frontend Development and Quality Assurance</div> 
               </div>
 
               <div
                 className="
-                  mt-[1.5vh] text-center text-[2vh] font-light leading-[3.5vh]
-                  text-[#101010] md:text-justify md:text-[1.80vh]
+                  mt-[1.5vh] text-center text-[2.5vh] font-light leading-[3.5vh]
+                  text-[#101010] md:text-justify md:text-[1.797vh]
                   md:font-normal md:leading-[3vh]
                 "
               >
-                I am a front-end developer with a strong interest in creating clean, responsive, and user-friendly web experiences. I work with React, Vite, Tailwind CSS, JavaScript, and JSX to build interfaces that are functional, organized, and visually clear. Through my academic and personal projects, I have gained experience in developing web applications, structuring reusable components, improving layouts, and refining user interactions. I am continuously improving my skills and working toward becoming a more capable, well-rounded, and reliable front-end developer.
+                I am a software engineer with an interest in both frontend development and quality assurance, focused on building reliable, responsive, and user-friendly web applications. I work with technologies such as React, Vite, Tailwind CSS, JavaScript, and JSX to develop clean and maintainable interfaces. I also have experience in software testing, including functional, regression, and exploratory testing, as well as test case development and defect reporting. I value writing organized code, identifying issues, improving user experiences, and ensuring software works as intended. I am continuously developing my technical skills in both development and QA to become a more versatile and reliable software engineer.
               </div>
             </div>
           </div>
@@ -632,7 +651,7 @@ function App() {
             />
             */}
             
-            <ProjectCard
+            {/* <ProjectCard
               direction="right"
               image={medlabview}
               imageAlt="medlabview"
@@ -644,10 +663,10 @@ function App() {
               stack={["REACT", "CSS"]}
               codeHref="https://github.com/BohemianRasberry/medlabview/tree/neoneo"
               liveHref="https://bohemianrasberry.github.io/medlabview/"
-            />
+            /> */}
 
             <ProjectCard
-              direction="left"
+              direction="right"
               image={BIMS}
               imageAlt="UPM-BIMS dashboard preview"
               logo={BIMS_logo}
@@ -726,41 +745,16 @@ function App() {
                   agudo.mdn@gmail.com
                 </a>
               </ContactItem>
-
-              <ContactItem icon={phone} alt="phone">
-                <div className="flex flex-col gap-[0.5vh]">
-                  <a
-                    href="tel:+63960-609-0601"
-                    className="text-[#101010] no-underline transition duration-300 hover:text-[#0FA3D0]"
-                  >
-                    +63 960 609 0601
-                  </a>
-                  <a
-                    href="tel:+63976-338-5485"
-                    className="text-[#101010] no-underline transition duration-300 hover:text-[#0FA3D0]"
-                  >
-                    +63 976 338 5485
-                  </a>
-                </div>
-              </ContactItem>
             </div>
 
             <a
               href="https://drive.google.com/file/d/1x5XQ6AgmyDIqROje9HvYb1uVU1HHF0rU/view?usp=sharing"
-              className="mt-[3vh] flex justify-center no-underline"
+              className="mt-[4vh] flex justify-center no-underline"
             >
-              <button
-                type="button"
-                className="
-                  rounded-full border border-[#0FA3D0]/20 bg-[#0FA3D0]
-                  px-[3vh] py-[1.25vh] font-['Poppins'] text-[2.25vh]
-                  font-semibold text-white shadow-[0_10px_25px_rgba(15,163,208,0.22)]
-                  transition duration-300
-                  hover:bg-[#085870]
-                  hover:shadow-[0_14px_32px_rgba(15,163,208,0.30)]
-                "
-              >
-                My Resume
+              
+              <button type="button">
+                <img src={resume} alt="download" className="rounded-[2vh] w-[105vh] transition-all duration-300
+                hover:shadow-[0_10px_25px_rgba(15,163,208,0.22)] pb-1 border border-cyan-200/80" />
               </button>
             </a>
           </div>
