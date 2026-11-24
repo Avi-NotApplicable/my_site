@@ -746,7 +746,7 @@ function App() {
             </div>
 
             <a
-              href="https://drive.google.com/file/d/1BXWhv0IQL32Pz2BTvuvIyLyERrZ5PIlH/view?usp=sharing"
+              href="https://drive.google.com/file/d/1x5XQ6AgmyDIqROje9HvYb1uVU1HHF0rU/view?usp=sharing"
               className="mt-[3vh] flex justify-center no-underline"
             >
               <button
@@ -760,7 +760,7 @@ function App() {
                   hover:shadow-[0_14px_32px_rgba(15,163,208,0.30)]
                 "
               >
-                La Résumé
+                My Resume
               </button>
             </a>
           </div>
