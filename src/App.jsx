@@ -15,7 +15,7 @@ import javascript from "./Components/Assets/javascript.png";
 import typescript from "./Components/Assets/typescript.svg";
 import playwright from "./Components/Assets/playwright.svg";
 import postman from "./Components/Assets/postman.svg";
-import jira from "./Components/Assets/jira.png";
+import jira from "./Components/Assets/jira_photo.png";
 import testrail from "./Components/Assets/testrail.svg";
 import git from "./Components/Assets/git.svg";
 
