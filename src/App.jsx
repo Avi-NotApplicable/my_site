@@ -94,7 +94,7 @@ function SocialButton({ href, icon, alt }) {
   );
 }
 
-function TechIcon({ src, alt }) {
+function TechIconUp({ src, alt }) {
   return (
     <img
       src={src}
@@ -102,6 +102,20 @@ function TechIcon({ src, alt }) {
       className="
         w-[3.5vh] transition-transform duration-300
         hover:-translate-y-[10px]
+        md:w-[4vh]
+      "
+    />
+  );
+}
+
+function TechIconDown({ src, alt }) {
+  return (
+    <img
+      src={src}
+      alt={alt}
+      className="
+        w-[3.5vh] transition-transform duration-300
+        hover:translate-y-[10px]
         md:w-[4vh]
       "
     />
@@ -423,9 +437,9 @@ function App() {
 
         <section
           className="
-            flex h-[105vh] w-full items-center justify-center
-            max-[321px]:h-[105vh]
-            min-[383px]:max-[385px]:h-screen
+            flex h-auto min-h-[105svh] w-full items-center justify-center
+            px-[2vh] py-[5vh]
+            md:h-[105vh] md:min-h-0 md:px-0 md:py-0
           "
           style={{
             background:
@@ -446,14 +460,15 @@ function App() {
                     </div>
                   </div>
                   <img
-                      src={handwave}
-                      alt="handwave"
-                      className="
-                        hand-wave h-[clamp(42px,6vw,78px)] w-auto shrink-0
-                        origin-[70%_70%] object-contain ml-4
-                        transition-transform duration-300 hover:animate-wave
-                      "
-                    />
+                    src={handwave}
+                    alt="handwave"
+                    className="
+                      h-[40px] w-auto shrink-0
+                      md:h-[78px]
+                      origin-[70%_70%] object-contain ml-4
+                      transition-transform duration-300 hover:animate-wave
+                    "
+                  />
                 </div>
 
                 <div className="flex flex-col items-center md:items-start">
@@ -491,22 +506,22 @@ function App() {
 
                   <div className="flex flex-row items-center gap-[2.1vh] md:gap-[4.75vh]">
                     Frontend
-                    <span className="pl-[4.8vh] pr-[1vh] font-light">|</span>
-                    <TechIcon src={react} alt="React" />
-                    <TechIcon src={vite} alt="Vite" />
-                    <TechIcon src={tailwind} alt="Tailwind CSS" />
-                    <TechIcon src={javascript} alt="JavaScript" />
-                    <TechIcon src={typescript} alt="TypeScript" />
+                    <span className="pl-[4.75vh] pr-[1vh] font-light">|</span>
+                    <TechIconUp src={react} alt="React" />
+                    <TechIconUp src={vite} alt="Vite" />
+                    <TechIconUp src={tailwind} alt="Tailwind CSS" />
+                    <TechIconUp src={javascript} alt="JavaScript" />
+                    <TechIconUp src={typescript} alt="TypeScript" />
                   </div>
 
                   <div className="flex flex-row items-center gap-[2.1vh] md:gap-[4.75vh]">
                     QA & Testing
                     <span className="px-[1vh] font-light">|</span>
-                    <TechIcon src={playwright} alt="Playwright" />
-                    <TechIcon src={postman} alt="Postman" />
-                    <TechIcon src={jira} alt="Jira" />
-                    <TechIcon src={testrail} alt="TestRail" />
-                    <TechIcon src={git} alt="Git" />
+                    <TechIconDown src={playwright} alt="Playwright" />
+                    <TechIconDown src={postman} alt="Postman" />
+                    <TechIconDown src={jira} alt="Jira" />
+                    <TechIconDown src={testrail} alt="TestRail" />
+                    <TechIconDown src={git} alt="Git" />
                   </div>
 
                   </div>
